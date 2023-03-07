@@ -59,7 +59,7 @@
                 <span class="text-start fs-3 fw-bold">Saldi</span>
                 <span class="text-end"><button type="button" data-bs-toggle="collapse" href="#collapseSection1" class="btn btn-outline-info border-0">Nascondi sezione</button></span>
             </div>
-            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 collapse-show" id="collapseSection1">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 collapse show" id="collapseSection1">
                 <div class="g-2">
                     <div class="card border-2 border-info">
                         <img src="https://picsum.photos/300/300" class="card-img-top" alt="destinationImg">
@@ -109,7 +109,7 @@
                 <span class="text-start fs-3">Summer Section</span>
                 <span class="text-end"><button type="button" data-bs-toggle="collapse" href="#collapseSection2" class="btn btn-outline-info border-0">Nascondi sezione</button></span>
             </div>
-            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 collapse-show" id="collapseSection2">
+            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 collapse show" id="collapseSection2">
                 <div class="g-2">
                     <div class="summer card shadow-lg">
                         <img src="https://picsum.photos/300/300" class="card-img-top" alt="destinationImg">
@@ -184,7 +184,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-start collapse-show" id="collapseSection3">
+            <div class="row text-start collapse show" id="collapseSection3">
                 <div class="col-8">
                         <img class="img-fluid rounded-3 shadow" src="https://picsum.photos/800/400" alt="imgDailyOffer">
                 </div>
@@ -210,7 +210,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4 collapse-show" id="collapseSection4">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4 collapse show" id="collapseSection4">
                 <div class="col"><img src="https://picsum.photos/300/300" alt="lastMinutePic" class="img-fluid shadow rounded-3"></div>
                 <div class="col"><img src="https://picsum.photos/300/300" alt="lastMinutePic" class="img-fluid shadow rounded-3"></div>
                 <div class="col"><img src="https://picsum.photos/300/300" alt="lastMinutePic" class="img-fluid shadow rounded-3"></div>
@@ -231,7 +231,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-1 collapse-show" id="collapseSection5">
+            <div class="row row-cols-1 collapse show" id="collapseSection5">
                 <div class="col">
                     <div class="row">
                         <div class="col-1 text-center py-3">
@@ -332,14 +332,16 @@
         badge.innerText = 'Hot'
 
         let arrSummer = Array.from(summer)
+
         //ancora non funziona
+
         function hotDeals(){
-            arrSummer.forEach(
-                (element) => {
-                    element.appendChild(badge)
-                    return badge
-                })
-        }
+            arrSummer.forEach(function(el)
+            {
+                el.appendChild(badge)
+                return el.append
+            }
+            )}
         hotDeals();
     </script>
 
