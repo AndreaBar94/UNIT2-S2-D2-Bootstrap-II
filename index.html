@@ -329,16 +329,16 @@
         badge.classList.add('start-100')
         badge.classList.add('translate-middle')
         badge.classList.add('rounded-pill')
-        badge.innerText = 'Hot';
-        console.log(badge)
+        badge.innerText = 'Hot'
 
         let arrSummer = Array.from(summer)
+        //ancora non funziona
         function hotDeals(){
             arrSummer.forEach(
                 (element) => {
                     element.appendChild(badge)
+                    return badge
                 })
-                return badge
         }
         hotDeals();
     </script>
